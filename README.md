@@ -9,12 +9,14 @@ Una aplicación web sencilla que permite ingresar nombres y sortear al azar un �
 - Sorteo aleatorio de un solo nombre
 - Mensaje con el resultado del sorteo
 
-## 🛠️ Tecnologías usadas
+## Tecnologías usadas
 
 - HTML
 - CSS
 - JavaScript (sin frameworks)
 
-## 📸 Vista previa
+Nota: Es importante agregar nombres, no permite campos vacios.
+
+## Vista previa
 
 <img width="1113" height="936" alt="Captura de pantalla 2025-08-11 200138" src="https://github.com/user-attachments/assets/0c799902-af17-4c49-8bd6-194e70916182" />
