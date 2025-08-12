@@ -1,44 +1,20 @@
-let listaDeAmigos = [];
+# Amigo Secreto
 
-function agregarAmigo() {
-    const input = document.getElementById('amigo');
-    const nombre = input.value.trim();
-    const listaHTML = document.getElementById('listaAmigos');
+Una aplicación web sencilla que permite ingresar nombres y sortear al azar un único "amigo secreto" entre ellos.
 
-    if (nombre === '') {
-        alert('Por favor, escribe un nombre.');
-        return;
-    }
+## Funcionalidades
 
-    if (listaDeAmigos.includes(nombre)) {
-        alert('Este nombre ya está en la lista.');
-        input.value = '';
-        return;
-    }
+- Ingreso de nombres uno por uno
+- Visualización de la lista de amigos agregados
+- Sorteo aleatorio de un solo nombre
+- Mensaje con el resultado del sorteo
 
-    listaDeAmigos.push(nombre);
+## 🛠️ Tecnologías usadas
 
-    const nuevoElemento = document.createElement('li');
-    nuevoElemento.textContent = nombre;
-    listaHTML.appendChild(nuevoElemento);
+- HTML
+- CSS
+- JavaScript (sin frameworks)
 
-    input.value = '';
-    input.focus();
-}
+## 📸 Vista previa
 
-function sortearAmigo() {
-    const resultadoHTML = document.getElementById('resultado');
-    resultadoHTML.innerHTML = '';
-
-    if (listaDeAmigos.length === 0) {
-        alert('Primero debes añadir al menos un nombre.');
-        return;
-    }
-
-    const numeroAleatorio = Math.floor(Math.random() * listaDeAmigos.length);
-    const nombreElegido = listaDeAmigos[numeroAleatorio];
-
-    const li = document.createElement('li');
-    li.textContent = `El amigo secreto es: ${nombreElegido}`;
-    resultadoHTML.appendChild(li);
-}
+<img width="1113" height="936" alt="Captura de pantalla 2025-08-11 200138" src="https://github.com/user-attachments/assets/0c799902-af17-4c49-8bd6-194e70916182" />
